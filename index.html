@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 메타 -->
+    <meta name="keywords" content="반응형, 여행, tour">
+    <meta name="description" content="반응형으로 제작되어진 여행관련 웹사이트(tour list)">
+    
+    <!-- 오픈그래픽 -->
+    <meta property="og:title" content="Tour List">
+    <meta property="og:image" content="./images/img-og.png">
+    <meta property="og:description" content="지금 떠나기 좋은 여행지...">
+    <meta property="og:url" content="url주소">
+
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">    
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- header 스타일 -->
+    <link rel="stylesheet" href="./css/header.css">
+    <!-- index 스타일 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- footer 스타일 -->
+    <link rel="stylesheet" href="./css/footer.css">    
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- header 스크립트 -->
+    <script src="./js/header.js"></script>
+    <!-- index 스크립트 AJAX-->
+    <script src="./js/index.js"></script>
+    <title>투어리스트 인 투어</title>
+</head>
+<body>
+    <ul class="skip-nav">
+        <li><a href="./#home">시작화면</a></li>
+        <li><a href="./#top03">본문</a></li>
+        <li><a href="./#notice">공지사항</a></li>        
+    </ul>
+
+    <section class="wrap">
+        <header class="header" id="home">
+            <div class="container">
+                <h1><a href="./index.html">투어리스트 인 투어</a></h1>                
+                <nav id="nav">
+                    <ul class="member">
+                        <li><a href="./login.html">로그인</a></li>
+                        <li><a href="./join.html">회원가입</a></li>
+                    </ul>
+                    <ul class="main-nav">
+                        <li>
+                            <a href="#">여행정보</a>
+                            <ul class="sub-nav">
+                                <li><a href="#">국내</a></li>
+                                <li><a href="#">해외</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./notice.html">고객센터</a>
+                            <ul class="sub-nav">
+                                <li><a href="./notice.html">공지사항</a></li>
+                                <li><a href="#">문의하기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./program.html">상품투어</a>
+                            <ul class="sub-nav">
+                                <li><a href="./program.html">프로그램 소개</a></li>
+                                <li><a href="#">여행자료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">티켓/가이트</a>
+                            <ul class="sub-nav">
+                                <li><a href="#">항공</a></li>
+                                <li><a href="#">호텔</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="btn-toggle-nav" id="btn-toggle-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <section class="sec sec01 main-slider">
+            <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="img-box slide01 swiper-slide">
+                            <a href="#">
+                                <picture>
+                                    <source media="(min-width:768px)" srcset="./images/img_slidecontents01.png">
+                                    <img src="./images/mainslide_mob01.jpg" alt="mob01">
+                                </picture> 
+                            </a>
+                        </div>
+                        <div class="img-box slide02 swiper-slide">
+                            <a href="#">
+                                <picture>
+                                    <source media="(min-width:768px)" srcset="./images/img_slidecontents02.png">
+                                    <img src="./images/mainslide_mob02.jpg" alt="mob02">
+                                </picture> 
+                            </a>
+                        </div>
+                        <div class="img-box slide03 swiper-slide">
+                            <a href="#">
+                                <picture>
+                                    <source media="(min-width:768px)" srcset="./images/img_slidecontents03.png">
+                                    <img src="./images/mainslide_mob03.jpg" alt="mob03">
+                                </picture> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="sec sec02 top03" id="top03">
+            <div class="container">
+                <h2><span>다시 찾는 인기 여행지</span> <span>TOP3</span></h2>
+                <div class="item item01" item-value="0">
+                    <div class="img-box">
+                        <a href="#"><img src="./images/img_topplace01.jpg" alt="top01"></a>
+                    </div>
+                    <h3><a href="#">성패트릭 대성당</a></h3>
+                    <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto deserunt culpa consequatur aut optio magni!</a></p>
+                    <p><a href="#">View</a></p>
+                </div>
+                <div class="item item02" item-value="1">
+                    <div class="img-box">
+                        <a href="#"><img src="./images/img_topplace02.jpg" alt="top02"></a>
+                    </div>
+                    <h3><a href="#">성패트릭 대성당</a></h3>
+                    <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto deserunt culpa consequatur aut optio magni!</a></p>
+                    <p><a href="#">View</a></p>
+                </div>
+                <div class="item item03" item-value="2">
+                    <div class="img-box">
+                        <a href="#"><img src="./images/img_topplace03.jpg" alt="top03"></a>
+                    </div>
+                    <h3><a href="#">성패트릭 대성당</a></h3>
+                    <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto deserunt culpa consequatur aut optio magni!</a></p>
+                    <p><a href="#">View</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="sec sec03" id="notice">
+            <div class="container">
+                <div class="consult">
+                    <h2>consult</h2>
+                    <ul>
+                        <li><a href="#">카카오톡 1:1상담</a></li>
+                        <li><a href="#">전화상담 신청</a></li>
+                    </ul>
+                </div>
+                <div class="notice">
+                    <h2>notice</h2>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section> 
+        <div class="popup popup01">
+            <div class="popup-contents">
+                <h2>성패트릭 대성당</h2>
+                <div class="img-box"><img src="./images/img_pop1_1.jpg" alt="성패트릭"></div>
+                <p>
+                    뉴욕에서 만난 아름다운 고딕양식에 감탄을 금할 수 없습니다.
+                    인상적인 예술작품들과 함께 하고 있으며 정교한 구조와 섬세한 조각들을 만날 수 있습니다.
+                </p>
+                <div class="btn-close">
+                    <span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <div class="popup popup02">
+            <div class="popup-contents">
+                <h2>원주 뮤지엄 '산'</h2>
+                <div class="img-box"><img src="./images/img_pop2_1.jpg" alt="원주 뮤지엄 '산'"></div>
+                <p>
+                    실내와 야외, 문화와 자연이 공존하는 세계.
+                    뮤지엄 산은 휴식과 소통이 어울러진 복합공간을 추구합니다.
+                </p>
+                <h2>박물관 야외</h2>
+                <div class="img-box"><img src="./images/img_pop2_2.jpg" alt="박물관 야외"></div>
+                <p>
+                    공간에 대한 관람을 최대한 배려하려고 합니다.
+                    뮤지엄 산은 돌과 물과 산이 함께 어울림으로 배치된 조형 공간입니다.
+                </p>
+                <div class="btn-close">
+                    <span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <div class="popup popup03">
+            <div class="popup-contents">
+                <h2>일본 만국박람회 기념 공원</h2>
+                <div class="img-box"><img src="./images/img_pop3_1.jpg" alt="일본 만국박람회 기념 공원"></div>
+                <p>
+                    센리 반파쿠 기념 공원에서는 일본 정원의 확장판을 만날 수 있습니다.
+                    가능한 가장 넓은 공간에 꾸민 연못, 산림욕, 정원, 산책길을 만끽할 수 있습니다.
+                </p>
+                <div class="btn-close">
+                    <span></span><span></span>
+                </div>
+            </div>
+        </div>        
+        <section class="sec sec04 quick-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="#">전화 문의 <span>010-1234-5678</span></a></li>
+                    <li><a href="#">카카오톡 <span>1:1상담</span></a></li>
+                    <li><a href="#">오시는 길</a></li>
+                    <li id="btn-top"><a href="#">TOP</a></li>
+                </ul>
+            </div>
+        </section>
+        <footer class="footer">            
+            <div class="container">
+                
+                <ul class="footer-nav">
+                    <li><a href="#"><strong>이용약관</strong></a></li>
+                    <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                </ul>
+                <ul class="footer-sns">
+                    <li><a href="#"><img src="./images/ico_facebook_r.png" alt="face"></a></li>
+                    <li><a href="#"><img src="./images/ico_instargram_r.png" alt="instargram"></a></li>
+                    <li><a href="#"><img src="./images/ico_blog_r.png" alt="blog"></a></li>
+                </ul>
+                <address>
+                    <div>투어리스트인투어</div>
+                    <div class="ta-inline">서울특별시 종로구 혜화동 9길 청운빌딩 5층 /</div>
+                    <div class="ta-inline">대표전화 02-1234-5678 /</div>
+                    <div class="ta-inline">E-mail : titour@touristintour.com</div>
+                    <div>Copyright(c) TouristInTour all right reserved</div>
+                </address>
+            </div>
+        </footer>
+    </section>    
+</body>
+</html>

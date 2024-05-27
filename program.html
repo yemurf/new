@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 메타 -->
+    <meta name="keywords" content="반응형, 여행, tour">
+    <meta name="description" content="반응형으로 제작되어진 여행관련 웹사이트(tour list)">
+    
+    <!-- 오픈그래픽 -->
+    <meta property="og:title" content="Tour List">
+    <meta property="og:image" content="이미지주소">
+    <meta property="og:description" content="지금 떠나기 좋은 여행지...">
+    <meta property="og:url" content="url주소">
+
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">    
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- header 스타일 -->
+    <link rel="stylesheet" href="./css/header.css">
+    <!-- 서브공통스타일 -->
+    <link rel="stylesheet" href="./css/sub.css">
+    <!-- program 스타일 -->
+    <link rel="stylesheet" href="./css/program.css">
+    <!-- footer 스타일 -->
+    <link rel="stylesheet" href="./css/footer.css">    
+
+    <script src="./js/jquery.min.js"></script>
+    <!-- header 스크립트 -->
+    <script src="./js/header.js"></script>    
+    <title>투어리스트 인 투어</title>
+    
+</head>
+<body>
+    <ul class="skip-nav">
+        <li><a href="./#home">시작화면</a></li>
+        <li><a href="./#top03">본문</a></li>
+        <li><a href="./#notice">공지사항</a></li>        
+    </ul>
+
+    <section class="wrap">
+        <header class="header" id="home">
+            <div class="container">
+                <h1><a href="./index.html">투어리스트 인 투어</a></h1>                
+                <nav id="nav">
+                    <ul class="member">
+                        <li><a href="./login.html">로그인</a></li>
+                        <li><a href="./join.html">회원가입</a></li>
+                    </ul>
+                    <ul class="main-nav">
+                        <li>
+                            <a href="#">여행정보</a>
+                            <ul class="sub-nav">
+                                <li><a href="#">국내</a></li>
+                                <li><a href="#">해외</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./notice.html">고객센터</a>
+                            <ul class="sub-nav">
+                                <li><a href="./notice.html">공지사항</a></li>
+                                <li><a href="#">문의하기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./program.html">상품투어</a>
+                            <ul class="sub-nav">
+                                <li><a href="./program.html">프로그램 소개</a></li>
+                                <li><a href="#">여행자료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">티켓/가이트</a>
+                            <ul class="sub-nav">
+                                <li><a href="#">항공</a></li>
+                                <li><a href="#">호텔</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="btn-toggle-nav" id="btn-toggle-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <main class="main" id="main">
+            <section class="sec sec01">
+                <div class="container">
+                    <h2 class="tit-sec">TOURIST in TOUR</h2>
+                    <h3 class="tit-location">상품투어 / 프로그램 소개</h3>
+                </div>
+            </section>
+            <section class="sec sec02">
+                <div class="container">
+                    <ul class="program-list">
+                        <li class="col-all col-01">
+                            <h3>이응노 미술관</h3>
+                            <h4>leeungno <span>museum</span></h4>
+                            <div class="img-box"><img src="./images/img_place_01.jpg" alt="이응노 미술관"></div>
+                            <p>고암 이응노 화백의 예술세계와 작품들을 감상할 수 있다. <span>대전에 위치한 이응노 미술관에서는 대전과 파리, 한국과 프랑스, 아시아와 유럽의 커뮤니케이션이 일어난다.</span></p>
+                            <button>더보기</button>
+                        </li>
+                        <li class="col-all col-02">
+                            <h3>김유정 문학촌</h3>
+                            <h4>kimyujung <span>museum</span></h4>
+                            <div class="img-box"><img src="./images/img_place_02.jpg" alt="김유정 문학촌"></div>
+                            <p>강원도 춘천시에서는 김유정이 우리나라 제일의 소설가인 것처럼 정성을 다해 김유정 문학촌을 꾸몄다. <span>기념관은 물론이고 소설의 마지막 장면을 실제크기 동상으로 재연하기도 했다. 우리를 감동시킨 많은 다른 문학가, 예술인들도 해당 지자체에서 성의를 다해 기렸으면 하는 바램이다.</span></p>
+                            <button>더보기</button>
+                        </li>
+                        <li class="col-all col-03">
+                            <h3>책과 인쇄 박물관</h3>
+                            <h4>leeungno <span>museum</span></h4>
+                            <div class="img-box"><img src="./images/img_place_03.jpg" alt="책과 인쇄 박물관"></div>
+                            <p>고암 이응노 화백의 예술세계와 작품들을 감상할 수 있다. <span>대전에 위치한 이응노 미술관에서는 대전과 파리, 한국과 프랑스, 아시아와 유럽의 커뮤니케이션이 일어난다.</span></p>
+                            <button>더보기</button>
+                        </li>
+                        <li class="col-all col-01">
+                            <h3>백사실 현통사</h3>
+                            <h4>leeungno <span>museum</span></h4>
+                            <div class="img-box"><img src="./images/img_place_04.jpg" alt="이응노 미술관"></div>
+                            <p>고암 이응노 화백의 예술세계와 작품들을 감상할 수 있다. <span>대전에 위치한 이응노 미술관에서는 대전과 파리, 한국과 프랑스, 아시아와 유럽의 커뮤니케이션이 일어난다.</span></p>
+                            <button>더보기</button>
+                        </li>
+                        <li class="col-all col-02">
+                            <h3>통영국제음악당</h3>
+                            <h4>leeungno <span>museum</span></h4>
+                            <div class="img-box"><img src="./images/img_place_05.jpg" alt="이응노 미술관"></div>
+                            <p>고암 이응노 화백의 예술세계와 작품들을 감상할 수 있다. <span>대전에 위치한 이응노 미술관에서는 대전과 파리, 한국과 프랑스, 아시아와 유럽의 커뮤니케이션이 일어난다.</span></p>
+                            <button>더보기</button>
+                        </li>
+                        <li class="col-all col-03">
+                            <h3>아침고요수목원</h3>
+                            <h4>leeungno <span>museum</span></h4>
+                            <div class="img-box"><img src="./images/img_place_06.jpg" alt="이응노 미술관"></div>
+                            <p>고암 이응노 화백의 예술세계와 작품들을 감상할 수 있다. <span>대전에 위치한 이응노 미술관에서는 대전과 파리, 한국과 프랑스, 아시아와 유럽의 커뮤니케이션이 일어난다.</span></p>
+                            <button>더보기</button>
+                        </li>
+                        <li class="col-all col-01">
+                            <h3>제천 리솜포레스트</h3>
+                            <h4>leeungno <span>museum</span></h4>
+                            <div class="img-box"><img src="./images/img_place_07.jpg" alt="이응노 미술관"></div>
+                            <p>고암 이응노 화백의 예술세계와 작품들을 감상할 수 있다. <span>대전에 위치한 이응노 미술관에서는 대전과 파리, 한국과 프랑스, 아시아와 유럽의 커뮤니케이션이 일어난다.</span></p>
+                            <button>더보기</button>
+                        </li>
+                        <li class="col-all col-02">
+                            <h3>정동진</h3>
+                            <h4>leeungno <span>museum</span></h4>
+                            <div class="img-box"><img src="./images/img_place_08.jpg" alt="이응노 미술관"></div>
+                            <p>고암 이응노 화백의 예술세계와 작품들을 감상할 수 있다. <span>대전에 위치한 이응노 미술관에서는 대전과 파리, 한국과 프랑스, 아시아와 유럽의 커뮤니케이션이 일어난다.</span></p>
+                            <button>더보기</button>
+                        </li>
+                        <li class="col-all col-03">
+                            <h3>센트럴파크</h3>
+                            <h4>leeungno <span>museum</span></h4>
+                            <div class="img-box"><img src="./images/img_place_09.jpg" alt="이응노 미술관"></div>
+                            <p>고암 이응노 화백의 예술세계와 작품들을 감상할 수 있다. <span>대전에 위치한 이응노 미술관에서는 대전과 파리, 한국과 프랑스, 아시아와 유럽의 커뮤니케이션이 일어난다.</span></p>
+                            <button>더보기</button>
+                        </li>
+                        <li class="col-all col-01">
+                            <h3>석파정</h3>
+                            <h4>leeungno <span>museum</span></h4>
+                            <div class="img-box"><img src="./images/img_place_10.jpg" alt="이응노 미술관"></div>
+                            <p>고암 이응노 화백의 예술세계와 작품들을 감상할 수 있다. <span>대전에 위치한 이응노 미술관에서는 대전과 파리, 한국과 프랑스, 아시아와 유럽의 커뮤니케이션이 일어난다.</span></p>
+                            <button>더보기</button>
+                        </li>
+                        <li class="col-all col-02">
+                            <h3>뉴욕공립도서관</h3>
+                            <h4>leeungno <span>museum</span></h4>
+                            <div class="img-box"><img src="./images/img_place_11.jpg" alt="이응노 미술관"></div>
+                            <p>고암 이응노 화백의 예술세계와 작품들을 감상할 수 있다. <span>대전에 위치한 이응노 미술관에서는 대전과 파리, 한국과 프랑스, 아시아와 유럽의 커뮤니케이션이 일어난다.</span></p>
+                            <button>더보기</button>
+                        </li>
+                        <li class="col-all col-03">
+                            <h3>강천산 계곡</h3>
+                            <h4>leeungno <span>museum</span></h4>
+                            <div class="img-box"><img src="./images/img_place_12.jpg" alt="이응노 미술관"></div>
+                            <p>고암 이응노 화백의 예술세계와 작품들을 감상할 수 있다. <span>대전에 위치한 이응노 미술관에서는 대전과 파리, 한국과 프랑스, 아시아와 유럽의 커뮤니케이션이 일어난다.</span></p>
+                            <button>더보기</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>                
+        <section class="sec sec04 quick-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="#">전화 문의 <span>010-1234-5678</span></a></li>
+                    <li><a href="#">카카오톡 <span>1:1상담</span></a></li>
+                    <li><a href="#">오시는 길</a></li>
+                    <li id="btn-top"><a href="#">TOP</a></li>
+                </ul>
+            </div>
+        </section>
+        <footer class="footer">            
+            <div class="container">
+                
+                <ul class="footer-nav">
+                    <li><a href="#"><strong>이용약관</strong></a></li>
+                    <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                </ul>
+                <ul class="footer-sns">
+                    <li><a href="#"><img src="./images/ico_facebook_r.png" alt="face"></a></li>
+                    <li><a href="#"><img src="./images/ico_instargram_r.png" alt="instargram"></a></li>
+                    <li><a href="#"><img src="./images/ico_blog_r.png" alt="blog"></a></li>
+                </ul>
+                <address>
+                    <div>투어리스트인투어</div>
+                    <div class="ta-inline">서울특별시 종로구 혜화동 9길 청운빌딩 5층 /</div>
+                    <div class="ta-inline">대표전화 02-1234-5678 /</div>
+                    <div class="ta-inline">E-mail : titour@touristintour.com</div>
+                    <div>Copyright(c) TouristInTour all right reserved</div>
+                </address>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,167 @@
+@charset 'utf-8';
+.quick-nav{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:1002;
+    background:#3a3e46;
+    color:#fff;
+}
+.quick-nav ul{
+    position:relative;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.quick-nav ul::before,.quick-nav ul::after{
+    content:'';
+    display:block;
+    width:2px;
+    height:30px;
+    background:#fff;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.quick-nav ul::before{
+    left:33.3333%;
+}
+.quick-nav ul::after{
+    right:33.3333%;
+}
+.quick-nav ul li{
+    display:grid;
+    grid-template-columns:auto;
+    justify-content:center;
+    align-items:center;            
+    text-align:center;
+}
+.quick-nav ul li a{            
+    padding:2em 0 2em 2em;
+    background:url(../images/ico_phone_mobtm.png) no-repeat left center;
+    background-size:20px;
+    font-size:1.2em;
+}        
+.quick-nav ul li:nth-child(2) a{
+    background-image:url(../images/ico_katalk_mobtm.png);
+}
+.quick-nav ul li:nth-child(3) a{
+    background-image:url(../images/ico_contact_mobtm.png);
+}
+.quick-nav ul li a span{
+    font-size:0.8em;
+    display:none;
+}
+
+.quick-nav ul li:last-child{
+    position:fixed;
+    right:20px;
+    bottom:200px;
+    display:none;
+}
+.quick-nav ul li:last-child a{
+    width:50px;
+    height:50px;
+    padding:0;
+    background:url(../images/ico_totop_mo.png) no-repeat center;
+    background-size:contain;
+    text-indent:-999999px;
+}
+.footer{            
+    padding:50px 0 200px;
+}
+.footer .container{
+    position:relative;
+    max-width:1280px;
+    margin:0 auto;
+    padding:0 16px;
+}
+.footer-nav{
+    position:relative;
+    margin-bottom:2em;
+}
+.footer-nav::before{
+    content:'';
+    display:block;
+    width:1px;
+    height:12px;
+    background:#666;
+    position:absolute;
+    left:80px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.footer-nav li{
+    display:inline-block;
+    padding-right:2em;
+    font-weight:700;
+    font-size:1.2em;
+}
+.footer-sns{
+    position:absolute;
+    left:50%;
+    bottom:-100px;
+    transform: translateX(-50%);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2em;
+}  
+@media (min-width:768px){   
+    .quick-nav ul li{
+        display:none;
+    }         
+    .footer{
+        padding-bottom:50px;
+    }
+    .footer-sns{
+        left:auto;
+        right:16px;
+        top:-20px;
+        bottom:auto;
+        transform:translateX(0);
+    }
+    .ta-inline{
+        display:inline-block;
+    }
+}
+@media (min-width:960px){            
+    .footer-sns{
+        top:50%;
+        transform:translateY(-50%);
+    }
+}
+@media (min-width:1280px){
+    .quick-nav{
+        left:auto;
+        top:200px;
+        bottom:auto;
+        border:1px solid #3a3e46;
+    }
+    .quick-nav ul::before,.quick-nav ul::after{
+        display:none;
+    }
+    .quick-nav ul li{
+        display:grid;
+        grid-column:1/-1; 
+        border-bottom:1px solid #fff; 
+        padding:1em 1.5em;
+        font-size:0.9em;              
+    }
+    .quick-nav ul li:last-child{
+        position:static;
+        display:grid !important;
+        border-bottom:none;
+        padding:0;                
+        background:#fff;
+    }
+    .quick-nav ul li a{
+        padding:0;
+        background:none !important;
+    }
+    .quick-nav ul li:last-child a{
+        background:url(../images/ico_totop.png) no-repeat center !important;
+    }
+    .quick-nav ul li a span{
+        display:block;
+    }
+}

@@ -1,0 +1,39 @@
+@charset 'utf-8';
+.sec01{
+    max-width:1980px;    
+    height:250px;    
+    margin:0 auto 60px;
+    background:url(../images/img_top5.jpg) no-repeat center bottom;
+    background-size:cover;
+}
+.sec01 .container{
+    max-width:1280px;
+    margin:0 auto;
+    padding:0 40px;
+}
+.tit-sec{
+    border-bottom:1px solid #fff;
+    padding-top:150px;
+    font-size:2em;
+    color:#fff;
+}
+.tit-location{
+    font-size:1.2em;
+    color:#fff;
+}
+@media (min-width:768px){
+    .sec01{
+        height:400px;
+    }
+    .tit-sec{
+        padding-top:250px;
+    }
+}
+@media (min-width:960px){
+    .sec01{
+        height:500px;
+    }
+    .tit-sec{
+        padding-top:350px;
+    }
+}
